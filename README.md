@@ -1,5 +1,7 @@
 # Go Ortam Kurulum ve Başlangıç Adımları
 
+Kaynak : https://go.kaanksc.com/kitap-hakkinda/giris
+
 
 1- Kurulum : https://go.dev/dl/
 
@@ -26,6 +28,13 @@ func main(){
 * import: Go Kütüphanesinden örnek olarak fmt'yi koda import ettik, koda eklemek istediğiniz işlemleri import ile sağlarız
 * func main: Programın çalışacağı ana fonksiyondur, Derlenen uygulama ilk main fonksiyonuna bakar ve kodları {parantez} iöine yazarız
 
-Çalıştırabilir dosya oluşturmak için : go build main.go -- Olduğunuz dizine Windowsta exe oluşturur.
+
+5- Build
+
+* Çalıştırabilir dosya oluşturmak için : "go build main.go" -- Olduğunuz dizine Windowsta exe oluşturur.
+* Birden fazla dosya için ise "go build ." yapmamız gerekir farklı pathlerdeyse o path belirtilir "go build /c/home/go "
+* Html CSS gibi dosyalar paket içine eklenmez bunun için farklı kütüphaneler kullanılır.
+
+
 
 
