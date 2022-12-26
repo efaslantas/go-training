@@ -1,7 +1,7 @@
 package main
 
-import “fmt”
+import "fmt"
 
-func main(){
-    fmt.Println(“Merhaba Dünya!”)
+func main() {
+	fmt.Println("Merhaba Dünya!")
 }
