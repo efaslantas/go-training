@@ -22,9 +22,9 @@ func main(){
 }
 
 
-package: İçerisinde package değeri aynı olan kod sayfalarının birbirleriyle iletişim kurabilirler. Bunu package sayesinde sağlar.
-import: Go Kütüphanesinden örnek olarak fmt'yi koda import ettik, koda eklemek istediğiniz işlemleri import ile sağlarız
-func main: Programın çalışacağı ana fonksiyondur, Derlenen uygulama ilk main fonksiyonuna bakar ve kodları {parantez} iöine yazarız
+* package: İçerisinde package değeri aynı olan kod sayfalarının birbirleriyle iletişim kurabilirler. Bunu package sayesinde sağlar.
+* import: Go Kütüphanesinden örnek olarak fmt'yi koda import ettik, koda eklemek istediğiniz işlemleri import ile sağlarız
+* func main: Programın çalışacağı ana fonksiyondur, Derlenen uygulama ilk main fonksiyonuna bakar ve kodları {parantez} iöine yazarız
 
 Çalıştırabilir dosya oluşturmak için : go build main.go -- Olduğunuz dizine Windowsta exe oluşturur.
 
