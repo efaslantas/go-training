@@ -1,3 +1,3 @@
-module gotest
+module go-training
 
 go 1.20

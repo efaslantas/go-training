@@ -1,11 +1,11 @@
 // EFA FIRST CODE
 
-package main
+package hello
 
 import (
 	"fmt"
 )
 
-func main() {
+func hello() {
 	fmt.Println("Merhaba Dünya!")
 }
