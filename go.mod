@@ -1,3 +1,3 @@
-module github.com/efaslantas/go-training
+module gotest
 
-go 1.19
+go 1.20
