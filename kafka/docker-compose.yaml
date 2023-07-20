@@ -18,11 +18,12 @@ services:
       - "9092:9092"
     environment:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:9092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "false"
       KAFKA_DELETE_TOPIC_ENABLE: "true"
-
+    extra_hosts:
+     - "host.docker.internal:kafka"
  
 
   kafka-ui:
@@ -34,3 +35,4 @@ services:
       KAFKA_CLUSTERS_0_BOOTSTRAP_SERVERS: "kafka:9092"
       KAFKA_CLUSTERS_0_ZOOKEEPER_CONNECT: "zookeeper:2181"
       KAFKA_CLUSTERS_0_KAFKA_REST_PROXY_URL: "http://kafka:8082"
+  
